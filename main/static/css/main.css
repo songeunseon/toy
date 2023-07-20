@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 #header{
-    width: 1100px;
+    width: 100%;
     height:600px;
 }
 #header img{
@@ -34,11 +34,42 @@
     font-size: 60px;
     padding-top:10px;
 }
+
+#menu .a:hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+#menu .a:hover i{
+    opacity: 0;
+}
+#menu .a:hover::after{
+content:"장난감 목록";
+display: block;
+font-size: 30px;
+font-weight: 900;
+}
 #menu .b{
     background: #67B730;
     text-align: center;
     font-size: 50px;
     padding-top: 15px;
+}
+#menu .b:hover i{
+    opacity: 0;
+}
+#menu .b:hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+#menu .b:hover::after{
+content:"장난감 대여내역";
+display: block;
+font-size: 30px;
+font-weight: 900;
 }
 #menu .c{
     background: #DC3127;
@@ -46,15 +77,46 @@
     font-size: 50px;
     padding-top: 15px;
 }
+#menu .c:hover i{
+    opacity: 0;
+}
+#menu .c:hover{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+#menu .c:hover::after{
+content:"커뮤니티";
+display: block;
+font-size: 30px;
+font-weight: 900;
+}
 #slide{
     width: 100%;
     height: 450px;
     margin: 30px 0;
+    display: flex;
+    overflow: hidden;
+}
+#slide img{
+    margin: 0 20px;
 }
 #post{
     width: 100%;
-    height: 320px;
+    height: 300px;
+    position: relative;
+}
+#post b h2{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
     text-align: center;
+    padding-top:130px ;
+}
+#post img{
+    width: 100%;
+    height: 300px;
 }
 #footer{
     width: 100%;
