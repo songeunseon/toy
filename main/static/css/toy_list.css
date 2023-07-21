@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:1100px;
+    margin: 0 auto;
+
+}
+ul{list-style:none;}
+
+#header{
+    width: 1100px;
+    height:200px;
+    position: relative;
+    overflow: hidden;
+}
+#header img{
+    width: 1100px;
+    position:absolute;
+    top:-50px;
+    opacity:0.4;
+}
+#menu{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content:end;
+    align-content: flex-start;
+    z-index: 10;
+}
+.menuBar{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+#menu a{
+    display:block;
+}
+#menu .a{
+    background: #00acec;
+    text-align: center;
+    font-size: 60px;
+    padding-top:10px;
+}
+
+#menu .a:hover{
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+
+}
+#menu .a:hover i{
+    opacity: 0;
+}
+#menu .a:hover::before{
+padding-top:25px;
+content:"장난감 목록";
+display: block;
+font-size: 20px;
+animation: move 0.5s normal;
+color:#fff;
+
+}
+#menu .b{
+    background: #67B730;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 15px;
+}
+#menu .b:hover i{
+    opacity: 0;
+}
+#menu .b:hover{
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+}
+#menu .b:hover::before{
+padding-top: 20px;
+content:"장난감 대여내역";
+display: block;
+font-size: 20px;
+animation: move 0.5s normal;
+color:#fff;
+}
+#menu .c{
+    background: #DC3127;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 15px;
+}
+#menu .c:hover i{
+    opacity: 0;
+}
+#menu .c:hover{
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+}
+#menu .c:hover::before{
+padding-top: 20px;
+content:"커뮤니티";
+display: block;
+font-size: 20px;
+animation: move 0.5s normal;
+color:#fff;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        font-size: 0;
+    }
+    100%{
+
+        width: 200px;
+        height: 100px;
+    }
+}
+
+/*===============  중단 ========*/
+
+#main{
+    width:100%;
+    position:relative;
+}
+/*====  슬라이드  ====*/
+#slide_wrap{
+    width:100%;
+    position:relative;
+    margin-bottom:30px;
+
+}
+.slide_box{
+    width:100%;
+    height:300px;
+    position:relative;
+    overflow: hidden;
+
+}
+.slide_box .slider_list{
+    display:flex;
+    width:3300px;
+    position:relative;
+    left:0;
+    animation: slide_move 15s ease infinite alternate;
+}
+.slide_box .slider_list li{
+    width:1100px;
+}
+.slide_box .slider_list li img{
+    width:100%;
+    position:relative;
+}
+.slide_box .slider_list li:nth-child(2){background:#fca3d4;}
+.slide_box .slider_list li:nth-child(2) img{
+    position:relative;
+    width:900px;
+    top:-100px;
+    left:50%;
+    transform: translate(-50%,0);
+}
+.slide_box .slider_list li:nth-child(3) img{
+    position:relative;
+    top:-100px;
+}
+.slide_box .radio_bt{
+    position:absolute;
+    right:50px;
+    bottom:20px;
+}
+.slide_box .radio_bt .slide_bt{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    background:#fff;
+    border-radius: 100%;
+}
+@keyframes slide_move{
+    33.3%{
+        left:0;
+    }
+    66.6%{
+        left:-1100px;
+    }
+    100%{
+        left:-2200px;
+    }
+}
+
+
+/*====== 상품 목록  ======*/
+
+
+#article{
+    width:100%;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+#article .section{
+    border-bottom:1px solid #c5c5c5;
+}
+
+
+
+
+
+
+
+/* =====    하단 ======= */
+#footer{
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 10px 0;
+    border-top: 3px double #000;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.sns{
+    display: flex;
+    align-items:center;
+}
+.sns i{
+    margin-left: 20px;
+    font-size: 70px;
+}
+.sns .d{
+    background: linear-gradient(to bottom left, #4441da, #e62a7f, #f49f4e);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.sns .e{
+    color:#1d9bf0;
+}
+.sns .f{
+    color:#0733ca;
+}
