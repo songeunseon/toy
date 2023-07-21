@@ -11,16 +11,16 @@ body{
 #header{
     width: 1100px;
     height:200px;
+    overflow: hidden;
     position: relative;
 }
 #header img{
     width: 1100px;
-    height: 200px;
     opacity:0.4;
 }
 #menu{
     width: 100%;
-    margin-top: -200px;
+    top:0;
     position: absolute;
     display: flex;
     justify-content:end;
@@ -31,7 +31,7 @@ body{
     width:100px;
     height: 100px;
     border-radius: 100px;
-    margin-right: 10px;
+    margin:10px 10px 0 0;
     cursor: pointer;
 }
 #menu .a{
@@ -142,7 +142,6 @@ color:#fff;
     justify-content:space-between;
 }
 .choice{
-    width: 100%;
     height: 50px;
     margin: 0 10px;
     font-size: 30px;
@@ -184,6 +183,8 @@ color:#fff;
 #imgEX img{
     padding: 5px;
 }
+
+
 #pay{
     margin-bottom: 10px ;
 }
@@ -192,9 +193,21 @@ color:#fff;
 }
 #pay table{
     width: 100%;
-    text-align: center;
+    padding: 20px 50px 30px 0;
+    display: flex;
+    justify-content: end;
     font-size: 20px;
+    border-bottom: 3px dotted #00acec;
 }
+#pay table td:nth-child(1){
+    text-align: end;
+    padding-right: 50px;
+}
+#pay table td:nth-child(2){
+    text-align: start;
+    padding-left:  50px;
+}
+
 #payBT{
     width: 100%;
     height: 50px;
@@ -211,6 +224,7 @@ color:#fff;
 }
 .payMenu{
     width: 100%;
+    padding:10px 50px;
     display: flex;
     font-size: 50px;
     justify-content: space-between;
@@ -223,6 +237,10 @@ color:#fff;
     align-items: flex-end;
     justify-content: space-between;
 }
+.checkBox input{
+    width:25px;
+    height:25px;
+}
 .payText{
     text-align: center;
     color:#DC3127;
@@ -230,15 +248,18 @@ color:#fff;
 }
 #card{
     width: 100%;
+    padding: 0 50px;
     display: flex;
     justify-content: space-around;
 }
 #card img{
     width: 300px;
     height: 200px;
-    margin: 20px 10px;
+    margin: 10px 0;
     border-radius: 10px;
 }
+
+
 #footer{
     width: 100%;
     height: 100px;
