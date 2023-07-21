@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장난감 상세정보</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./static/css/detail.css">
+    <link rel="stylesheet" href="../static/css/detail.css">
 </head>
 <body>
     <header id="header">
-        <img src="./static/image/제로퍼제로 상세.jpg">
+        <img src="../static/image/ses_img/제로퍼제로 상세.jpg">
         <div id="menu">
             <div class="menuBar a">
                 <i class="bi bi-filter-left"></i>
@@ -23,12 +23,12 @@
         </div>
     </header>
     <div id="main">
-        <div id="detail">
+        <div class="detail">
             장난감 상세 정보
         </div>
         <div id="toyName">
             <div class="toyImage">
-                <img src="../main/static/image/미끄럼틀샘플.jpg">
+                <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
             </div>
             <div class="name">
                 <h1>미끄럼틀</h1>
@@ -36,10 +36,10 @@
                 기본 배송비 3,000원</h3>
                 <h5>(5만원 이상 배송비 무료)</h5>
                 <button class="choice">대여 신청</button>
-            </div>
+                </div>
 
         </div>
-        <div id="toyTable">
+        <table id="toyTable">
             <tr>
                 <td><b>최소 사용 연령</b></td>
                 <td>만 3세 이상</td>
@@ -48,20 +48,71 @@
                 <td><b>장난감 소재</b></td>
                 <td>PE,PP</td>
             </tr>
-        </div>
+        </table>
         <div id="caution">
             <h2>주의 사항</h2>
-            1. 보호자와 함께 사용해주세요<br>
-            2. 거꾸로 오르거나 위험하게 사용하지 마세요<br>
-            3. 조립시 볼트를 튼튼히 조여주세요<br>
-            4. 제품 파손시 책임비가 발생할수있습니다<br>
+            <br>
+            보호자와 함께 사용해주세요<br>
+            거꾸로 오르거나 위험하게 사용하지 마세요<br>
+            조립시 볼트를 튼튼히 조여주세요<br>
+            제품 파손시 책임비가 발생할수있습니다<br>
         </div>
         <div id="imgEX">
-            <img src="../main/static/image/미끄럼틀샘플.jpg">
-            <img src="../main/static/image/미끄럼틀샘플.jpg">
-            <img src="../main/static/image/미끄럼틀샘플.jpg">
-            <img src="../main/static/image/미끄럼틀샘플.jpg">
-            <img src="../main/static/image/미끄럼틀샘플.jpg">
+            <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
+            <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
+            <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
+            <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
+            <img src="../static/image/ses_img/미끄럼틀샘플.jpg">
+        </div>
+
+
+        <div id="pay" >
+            <div class="detail dPay">
+                장난감 대여 신청
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>총 대여 기간</td>
+                        <td><input type="number"> 개월 </td>
+                    </tr>
+                    <tr>
+                        <td>대여 금액</td>
+                        <td>원</td>
+                    </tr>
+                    <tr>
+                        <td>배송비</td>
+                        <td>3,000원</td>
+                    </tr>
+                    <tr>
+                        <td>총 결제금액</td>
+                        <td>원</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payMenu">
+                <div>결제수단</div>
+                <div class="checkBox">
+                <div>카드</div>
+                <div>실시간계좌이체</div>
+                <div>무통장입금</div>
+                </div>
+            </div>
+            <div id="card">
+                <div>
+                    <img src="../static/image/ses_img/카드색1.jpg">
+                </div>
+                <div>
+                    <img src="../static/image/ses_img/카드색2.jpg">
+                </div>
+                <div>
+                    <img src="../static/image/ses_img/카드색3.jpg">
+                </div>
+            </div>
+            <div class="payText">
+                결제금액 5만원 미만은 일시불로 결제합니다
+            </div>
+            <button id="payBT">결제 완료</button>
         </div>
     </div>
     <footer id="footer">
