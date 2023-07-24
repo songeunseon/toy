@@ -9,14 +9,27 @@ body{
 
 }
 #header{
-    width: 1100px;
-    height:200px;
-    overflow: hidden;
+    width: 100%;
+    height:330px;
     position: relative;
+    overflow: hidden;
 }
-#header img{
+.mainImg{
+    position: absolute;
     width: 1100px;
-    opacity:0.4;
+
+    opacity:0.3;
+}
+.mainImg img{
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    z-index: 10;
+}
+.logo img{
+    width: 200px;
+    margin: 50px 0 0 50px;
 }
 #menu{
     width: 100%;
@@ -195,7 +208,7 @@ color:#fff;
     width: 100%;
     padding: 20px 50px 30px 0;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     font-size: 20px;
     border-bottom: 3px dotted #00acec;
 }
@@ -207,7 +220,11 @@ color:#fff;
     text-align: start;
     padding-left:  50px;
 }
-
+.payTable input{
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+}
 #payBT{
     width: 100%;
     height: 50px;

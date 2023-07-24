@@ -11,31 +11,41 @@
 <body>
     <div id="wrap">
         <header id="header">
-            <img src="./static/image/ses_img/제로퍼제로.jpg">
+            <div class="logo">
+                <a href="./main.html">
+                    <img src="./static/image/ses_img/웹용 로고.png">
+                </a>
+            </div>
+            <div class="mainImg">
+                <img src="./static/image/ses_img/제로퍼제로.jpg">
+            </div>
         </header>
         <div id="menu">
-            <div class="menuBar a">
+            <div class="menuBar a" onclick="menu()">
                 <i class="bi bi-filter-left"></i>
             </div>
             <div class="menuBar b">
                 <i class="bi bi-journal-check"></i>
+                <a href=""></a>
             </div>
             <div class="menuBar c">
                 <i class="bi bi-people"></i>
+                <a href=""></a>
             </div>
         </div>
+        <div id="slideNav">
+            <p class="previous"><i class="bi bi-arrow-left-circle"></i></p>
+            <p class="next"><i class="bi bi-arrow-right-circle"></i></p>
+        </div>
         <div id="nav">
-            <div id="slide">
-                <img src="./static/image/ses_img/미끄럼틀샘플.jpg">
-                <img src="./static/image/ses_img/미끄럼틀샘플.jpg">
-                <img src="./static/image/ses_img/미끄럼틀샘플.jpg">
-                <img src="./static/image/ses_img/미끄럼틀샘플.jpg">
-                <img src="./static/image/ses_img/미끄럼틀샘플.jpg">
-            </div>
-            <div id="slideNav">
-                <p class="previous"><i class="bi bi-arrow-left-circle"></i></p>
-                <p class="next"><i class="bi bi-arrow-right-circle"></i></p>
-            </div>
+        
+            <ul id="slide" class="slide">
+                <li><img src="./static/image/ses_img/미끄럼틀샘플.jpg"></li>
+                <li><img src="./static/image/ses_img/미끄럼틀샘플.jpg"></li>
+                <li><img src="./static/image/ses_img/미끄럼틀샘플.jpg"></li>
+                <li><img src="./static/image/ses_img/미끄럼틀샘플.jpg"></li>
+                <li><img src="./static/image/ses_img/미끄럼틀샘플.jpg"></li>
+            </ul>
         </div>
         <div id="post">
             <b><h2>베베토이포스트 대여과정</h2></b>
