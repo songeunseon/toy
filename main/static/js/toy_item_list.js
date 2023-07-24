@@ -1,9 +1,43 @@
 
 
 const types=["승용완구","실내대형완구","디지털학습완구","rc"];
+const bar_color=["tayo","logi","gani","tayo"];
 
+let click_side=new Object();
+window.addEventListener("scroll",function(){
+    var side = document.querySelectorAll(".sub_link");
+    for(var i=0; i<side.length; i++)
+        side[i].classList.remove("side_active");
+    if(2800<= window.pageYOffset){
+        side[3].classList.add("side_active");
+        click_side=side[3];
+    }
+    else if(2000<= window.pageYOffset){
+        side[2].classList.add("side_active");
+        click_side=side[2];
+    }
+    else if(1200<= window.pageYOffset){
+        side[1].classList.add("side_active");
+        click_side=side[1];
+    }
+    else if(400<= window.pageYOffset){
+        side[0].classList.add("side_active");
+        click_side=side[0];
+    }
+});
 window.onload=function(){
     show_list();
+    var side = document.querySelectorAll(".sub_link");
+    for(var i=0; i<side.length; i++){
+        side[i].addEventListener("mouseover",function(){
+            if( this != click_side)
+                this.classList.add("side_active");
+        });
+        side[i].addEventListener("mouseout",function(){
+            if( this != click_side)
+                this.classList.remove("side_active");
+        });
+    }
 };
 
 async function show_list(){
@@ -15,14 +49,21 @@ async function show_list(){
 
     var section = document.querySelectorAll(".section");
     for(var i=0; i<types.length; i++){
-        var out="<div class='bar tayo'><h3 class='sub_menu_title'>"+types[i]+"</h3> <span class='sub_menu_more'>more</span></div>";
+        var out="<div id='"+types[i]+"' class='bar "+bar_color[i]+"'><h3 class='sub_menu_title'>"+types[i]+"</h3>  ";
+        out += "<a href='#' class='cta'><span class='sub_menu_more'>more</span>";
+        out+="<svg class='arrow'><path d='M1,5 L11,5'></path><polyline points='8 1 12 5 8 9'></polyline></svg></a></div>";
         out +="<div class='content_wrap'>";
         var idx=0;
         for(var k=1; k<=2; k++){
             out+="<div class='content_box'>"
             for(var l=1; l<=4; l++){
                 if( idx== d[i].length) idx=0;
-                out += "<div class='item'><div class='item_img_box'><img class='item_img' src='../static/image/toy_img/"+d[i][idx++].main+"'></div>";
+                out += "<div class='item'><a href='detail.html?type="+types[i]+"&id="+idx+"'><div class='item_img_box'><img class='item_img' src='../static/image/toy_img/"+d[i][idx].main+"'></div>";
+                out += "<h3 class='item_title'>"+d[i][idx].name+"</h3>";
+                out += "<b class='item_money'>"+(d[i][idx].money).toLocaleString()+"원</b></a>";
+                out += "<small class='item_point'><span>p</span>"+(Math.floor(d[i][idx].money/110))+"원 적립</small>";
+                out+="</div>";
+                idx++;
             }
             out+="</div>";
         }
