@@ -19,6 +19,9 @@ ul{list-style:none;}
     height:330px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainImg{
     position: absolute;
@@ -31,11 +34,11 @@ ul{list-style:none;}
 }
 .logo{
     position: absolute;
-    z-index: 10;
+    z-index: 100;
 }
 .logo img{
     width: 200px;
-    margin: 50px 0 0 50px;
+
 }
 .logo img:hover{
     animation: shake 1s infinite;
@@ -54,30 +57,30 @@ ul{list-style:none;}
 }
 #menu{
     width: 100%;
-    top:0;
+    top:25px;
     position: absolute;
     display: flex;
-    justify-content:end;
-    align-content: flex-start;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
     z-index: 10;
 }
 .menuBar{
-    width:100px;
-    height: 100px;
+    width:90px;
+    height: 90px;
     border-radius: 100px;
-    margin:10px 10px 0 0;
     cursor: pointer;
 }
 #menu .a{
     background: #00acec;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     padding-top:10px;
 }
 
 #menu .a:hover{
     width: 200px;
-    height: 100px;
+    height: 90px;
     border-radius: 30px;
 
 }
@@ -96,7 +99,7 @@ color:#fff;
 #menu .b{
     background: #67B730;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 15px;
 }
 #menu .b:hover i{
@@ -104,7 +107,7 @@ color:#fff;
 }
 #menu .b:hover{
     width: 200px;
-    height: 100px;
+    height: 90px;
     border-radius: 30px;
 }
 #menu .b:hover::before{
@@ -118,7 +121,7 @@ color:#fff;
 #menu .c{
     background: #DC3127;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 15px;
 }
 #menu .c:hover i{
@@ -126,7 +129,7 @@ color:#fff;
 }
 #menu .c:hover{
     width: 200px;
-    height: 100px;
+    height: 90px;
     border-radius: 30px;
 }
 #menu .c:hover::before{
