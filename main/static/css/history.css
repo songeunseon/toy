@@ -141,179 +141,66 @@ color:#fff;
         height: 100px;
     }
 }
-.detail{
+.history{
     width: 100%;
     height: 50px;
     margin: 10px 0;
-    background: #00acec;
+    background: #67B730;
     color: #fff;
     font-size: 30px;
     padding:5px 0 5px 50px;
 }
-#toyName{
-    width: 100%;
-    height: 600px;
-    display: flex;
-}
-#toyName img{
-    width: 500px;
-    height: 300px;
-}
-#item_sub{
-    width:100%;
-    height:250px;
-    overflow: hidden;
-}
-#item_sub ul{display:flex;list-style: none;}
-#item_sub img{
-    width:200px;
-
-}
-#item_detail ul{
-    display:flex;
-    flex-direction: column;
-    list-style: none;}
-#item_detail{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-#item_title{
-    width: 500px;
-    align-self: center;
-    
-}
-#item_money{
-    font-size: 30px;
-}
-.name{
-    padding-top: 10px;
-    width: 600px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content:center;
-}
-.choice{
+.list{
     width: 1100px;
-    height: 50px;
-    margin:10px 0;
-    font-size: 30px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.listImg img{
+    margin: 10px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+.bt .listBt_a:hover{
     background: #00acec;
-    color: #fff;
-    text-shadow: -1px -1px 3px #000;
-    border: 0;
-    border-radius: 10px;
     cursor: pointer;
 }
-.choice:hover{
+.bt .listBt_b:hover{
     background: #DC3127;
+    cursor: pointer;
 }
-#toyTable{
-    width: 100%;
-    height: 80px;
-    font-size: 30px;
-}
-#toyTable tr td{
-    border: 1px solid gray;
-    padding-left: 30px;
-    border-radius: 5px;
-}
-#toyTable td:nth-child(1){
-    width: 500px;
-}
-#caution{
-    width: 100%;
-    height: 250px;
-    text-align: center;
+.toy{
+    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-#pay{
-    margin-bottom: 10px ;
-}
-.dPay{
-    border-radius: 10px 10px 0 0;
-}
-#pay table{
-    width: 100%;
-    padding: 20px 50px 30px 0;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    border-bottom: 3px dotted #00acec;
-}
-#pay table td:nth-child(1){
-    text-align: end;
-    padding-right: 50px;
-}
-#pay table td:nth-child(2){
-    text-align: start;
-    padding-left:  50px;
-}
-.payTable input{
-    width: 50px;
-    font-size: 30px;
-    text-align: center;
-}
-#payBT{
-    width: 100%;
-    height: 50px;
-    background: #00acec;
-    font-size: 30px;
-    color: #fff;
-    border-radius: 0 0 10px 10px;
-    border: 0;
-    cursor: pointer;
-}
-#payBT:hover{
-    background: #DC3127;
-
-}
-.payMenu{
-    width: 100%;
-    padding:10px 50px;
-    display: flex;
-    font-size: 50px;
-    justify-content: space-between;
-
-}
-.payText{
-    font-size: 25px;
-}
-.checkBox{
-    width: 60%;
-    display: flex;
-    font-size: 30px;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-.checkBox input{
-    width:25px;
-    height:25px;
-}
-.payText{
-    text-align: center;
-    color:#DC3127;
-    padding: 20px 0;
-}
-#card{
-    width: 100%;
-    padding: 0 50px;
-    display: flex;
     justify-content: space-around;
 }
-#card img{
-    width: 300px;
-    height: 200px;
-    margin: 10px 0;
-    border-radius: 10px;
+.toy div{
+    font-size: 30px;
+
+
 }
-
-
+.bt{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bt .listBt{
+    width: 250px;
+    height: 50px;
+    margin-right: 10px;
+    font-size: 30px;
+    border: 0;
+    border-radius: 5px;
+    background: #67B730;
+    color: #fff;
+}
 #footer{
     width: 100%;
     height: 100px;

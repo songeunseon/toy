@@ -16,6 +16,7 @@ ul{list-style:none;}
 
 #header{
     width: 100%;
+<<<<<<< HEAD
     height:200px;
     position: relative;
     overflow: hidden;
@@ -25,9 +26,46 @@ ul{list-style:none;}
     position:absolute;
     top:-50px;
     opacity:0.4;
+=======
+    height:330px;
+    position: relative;
+    overflow: hidden;
+}
+.mainImg{
+    position: absolute;
+    width: 1100px;
+
+    opacity:0.3;
+}
+.mainImg img{
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    z-index: 10;
+}
+.logo img{
+    width: 200px;
+    margin: 50px 0 0 50px;
+}
+.logo img:hover{
+    animation: shake 1s infinite;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+>>>>>>> 4bf46a69fc36613a170089809dd205acd60648dc
 }
 #menu{
     width: 100%;
+    top:0;
     position: absolute;
     display: flex;
     justify-content:end;
@@ -38,10 +76,8 @@ ul{list-style:none;}
     width:100px;
     height: 100px;
     border-radius: 100px;
-    margin-right: 10px;
-}
-#menu a{
-    display:block;
+    margin:10px 10px 0 0;
+    cursor: pointer;
 }
 #menu .a{
     background: #00acec;
