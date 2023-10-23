@@ -237,3 +237,258 @@ color:#fff;
 .sns .f{
     color:#0733ca;
 }
+@media (max-width: 490px){
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    width:400px;
+    margin: 0 auto;
+
+}
+ul{list-style:none;}
+
+#header{
+    width: 100%;
+    height:150px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainImg{
+    position: absolute;
+    width: 450px;
+
+}
+.mainImg img{
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    z-index: 100;
+}
+.logo img{
+    width: 100px;
+    animation: shake 1s infinite;
+
+}
+.logo img:hover{
+    animation: none;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+
+}
+#menu{
+    width: 100%;
+    top:5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+    row-gap: 5px;
+    z-index: 10;
+}
+.menuBar{
+    width:45px;
+    height: 45px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#menu .a{
+    background: #00acec;
+    text-align: center;
+    font-size: 25px;
+    padding-top:5px;
+}
+
+#menu .a:hover{
+    width:45px;
+    height: 45px;
+    border-radius: 100px;
+
+}
+#menu .a:hover i{
+    opacity: 1;
+}
+#menu .a:hover::before{
+padding-top:25px;
+content:none;
+display: block;
+font-size: 20px;
+animation: none;
+color:#fff;
+
+}
+#menu .b{
+    background: #67B730;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 8px;
+}
+#menu .b:hover i{
+    opacity: 1;
+}
+#menu .b:hover{
+    width:45px;
+    height: 45px;
+    border-radius: 100px;
+}
+#menu .b:hover::before{
+padding-top: 20px;
+content:none;
+display: block;
+font-size: 20px;
+animation:none;
+color:#fff;
+}
+#menu .c{
+    background: #DC3127;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 8px;
+}
+#menu .c:hover i{
+    opacity: 1;
+}
+#menu .c:hover{
+    width:45px;
+    height: 45px;
+    border-radius: 100px;
+}
+#menu .c:hover::before{
+padding-top: 20px;
+content:none;
+display: block;
+font-size: 20px;
+animation:none;
+color:#fff;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        font-size: 0;
+    }
+    100%{
+
+        width: 200px;
+        height: 100px;
+    }
+}
+.history{
+    width: 400px;
+    height: 30px;
+    margin: 5px 0;
+    background: #67B730;
+    color: #fff;
+    font-size: 20px;
+    padding:0px 0 5px 10px;
+}
+.list{
+    width: 400px;
+    height: 150px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.listImg img{
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+.bt .listBt_a:hover{
+    background: #00acec;
+    cursor: pointer;
+}
+.bt .listBt_b:hover{
+    background: #DC3127;
+    cursor: pointer;
+}
+.toy{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.toy div{
+    font-size: 15px;
+
+
+}
+.bt{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bt .listBt{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 5px;
+    background: #67B730;
+    color: #fff;
+}
+#footer{
+    width: 100%;
+    height: 80px;
+    padding:5px;
+    border-top: 3px double #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+.address h2{
+    font-size: 15px;
+    padding: 10px;
+}
+.address h4{
+    width: 100%;
+    font-size: 8px;
+}
+.sns{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items:center;
+}
+.sns i{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.sns .d{
+    background: linear-gradient(to bottom left, #4441da, #e62a7f, #f49f4e);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.sns .e{
+    color:#1d9bf0;
+}
+.sns .f{
+    color:#0733ca;
+}
+}

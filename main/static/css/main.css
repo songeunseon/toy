@@ -227,3 +227,209 @@ color:#fff;
 .sns .f{
     color:#0733ca;
 }
+
+    @media (max-width: 490px){
+        *{
+            margin: 0 auto;
+        }
+        #wrap{
+            width: 400px;
+        }
+        #header{
+            width: 400px;
+            height:200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainImg{
+            position: absolute;
+            width: 400px;
+            overflow: hidden;
+        
+        }
+        .mainImg img{
+            width: 100%;
+        }
+        .logo{
+            position: absolute;
+            z-index: 10;
+        
+        }
+        .logo img{
+            width: 80px;
+            margin-top: 30px;
+            animation: shake 1s infinite;
+        }
+        .logo img:hover{
+            animation:none
+        }
+        @keyframes shake{
+            0%{
+                transform: rotate(-10deg);
+            }
+            50%{
+                transform: rotate(10deg);
+            }
+            100%{
+                transform: rotate(-10deg);
+            }
+        }
+        #menu{
+            width: 400px;
+            height: 100px;
+            margin-bottom: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        .menuBar{
+            width:50px;
+            height: 50px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+        #menu .a{
+            background: #00acec;
+            text-align: center;
+            font-size: 30px;
+            padding-top:5px;
+        }
+        
+        #menu .a:hover{
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            transition: none;
+        }
+        #menu .a:hover i{
+            opacity: 1;
+        }
+
+        #menu .b{
+            background: #67B730;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 5px;
+        }
+        #menu .b:hover i{
+            opacity: 1;
+        }
+        #menu .b:hover{
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            transition: none;
+        }
+        #menu .c{
+            background: #DC3127;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 5px;
+        }
+        #menu .c:hover i{
+            opacity: 1;
+        }
+        #menu .c:hover{
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            transition: none;
+        }
+        #nav{
+            width: 400px;
+        }
+        #slide{
+            margin:10px 0 10px 0;
+            position: relative;
+            width:400px;
+            height: 210px;
+            column-gap: 30px;
+            display: flex;
+            transition: 1s ease;  
+        }
+        #slide img{
+            width:200px;
+            margin-right: 10px;
+        }
+        #slideNav{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+            margin-bottom: 0px;
+        
+        }
+        #slideNav p{
+            cursor:pointer;
+            font-size: 30px;
+            color:#67B730;
+            
+        }
+        #slideNav p:hover{
+            color: #DC3127;
+        }
+        #post{
+            width: 400px;
+            height: 150px;
+            position: relative;
+            margin-bottom: 80px;
+        }
+        #post b h2{
+            width: 100%;
+            z-index: 10;
+            position: absolute;
+            text-align: center;
+            padding-top:43px ;
+            font-size: 15px;
+        }
+        #post img{
+            width: 400px;
+            height: 100px;
+        }
+        #footer{
+            width: 100%;
+            height: 80px;
+            padding:5px;
+            border-top: 3px double #000;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            bottom: 0;
+            background: #fff;
+        }
+        .address h2{
+            width: 300px;
+            font-size: 15px;
+            padding: 10px;
+        }
+        .address h4{
+            width: 400px;
+            font-size: 8px;
+        }
+        .sns{
+            margin: 0 auto;
+            position: absolute;
+            right: 40px;
+            display: flex;
+            align-items:center;
+        }
+        .sns i{
+            margin-left: 10px;
+            font-size: 30px;
+        }
+        .sns .d{
+            background: linear-gradient(to bottom left, #4441da, #e62a7f, #f49f4e);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .sns .e{
+            color:#1d9bf0;
+        }
+        .sns .f{
+            color:#0733ca;
+        }
+    }

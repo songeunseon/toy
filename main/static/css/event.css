@@ -191,3 +191,204 @@ color:#fff;
     background: #67B730;
     cursor: pointer;
 }
+@media (max-width: 490px){
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    body{
+        width:400px;
+        margin: 0 auto;
+    
+    }
+    ul{list-style:none;}
+    
+    #header{
+        width:400px;
+        height:150px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainImg{
+        position: absolute;
+        width: 450px;
+    
+    }
+    .mainImg img{
+        width: 100%;
+    }
+    .logo{
+        position: absolute;
+        z-index: 100;
+    }
+    .logo img{
+        width: 100px;
+        animation: shake 1s infinite;
+    
+    }
+    .logo img:hover{
+        animation: none;
+    }
+    @keyframes shake{
+        0%{
+            transform: rotate(-10deg);
+        }
+        50%{
+            transform: rotate(10deg);
+        }
+        100%{
+            transform: rotate(-10deg);
+        }
+    
+    }
+    #menu{
+        width: 400px;
+        top:5px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-end;
+        row-gap: 5px;
+        z-index: 10;
+    }
+    .menuBar{
+        width:45px;
+        height: 45px;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    #menu .a{
+        background: #00acec;
+        text-align: center;
+        font-size: 25px;
+        padding-top:5px;
+    }
+    
+    #menu .a:hover{
+        width:45px;
+        height: 45px;
+        border-radius: 100px;
+    
+    }
+    #menu .a:hover i{
+        opacity: 1;
+    }
+    #menu .a:hover::before{
+    padding-top:25px;
+    content:none;
+    display: block;
+    font-size: 20px;
+    animation: none;
+    color:#fff;
+    
+    }
+    #menu .b{
+        background: #67B730;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    #menu .b:hover i{
+        opacity: 1;
+    }
+    #menu .b:hover{
+        width:45px;
+        height: 45px;
+        border-radius: 100px;
+    }
+    #menu .b:hover::before{
+    padding-top: 20px;
+    content:none;
+    display: block;
+    font-size: 20px;
+    animation:none;
+    color:#fff;
+    }
+    #menu .c{
+        background: #DC3127;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 8px;
+    }
+    #menu .c:hover i{
+        opacity: 1;
+    }
+    #menu .c:hover{
+        width:45px;
+        height: 45px;
+        border-radius: 100px;
+    }
+    #menu .c:hover::before{
+    padding-top: 20px;
+    content:none;
+    display: block;
+    font-size: 20px;
+    animation:none;
+    color:#fff;
+    }
+    @keyframes move{
+        0%{
+            opacity: 0;
+            font-size: 0;
+        }
+        100%{
+    
+            width: 200px;
+            height: 100px;
+        }
+    }
+    #wrap{
+        width: 400px;
+    }
+.event{
+    width: 400px;
+    height: 40px;
+    margin: 10px 0;
+    background: #DC3127;
+    color: #fff;
+    font-size: 20px;
+    padding:5px 0 5px 10px;
+}
+#event_L{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#eventlist{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#eventimg img{
+    width: 250px;
+    border-radius: 10px;
+}
+#eventText{
+    margin-top: 20px;
+}
+#eventBT{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    background: #DC3127;
+    color: #fff;
+    border: 0;
+}
+#eventBT:hover{
+    background: #67B730;
+    cursor: pointer;
+}
+}
