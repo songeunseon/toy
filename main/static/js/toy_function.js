@@ -22,13 +22,12 @@ async function getDetail(type,name){
     }
     return false;
 }
-
 function menu() {
-    window.location.href = "item/toy_list.html";
+    window.location.href = "./toy_list.html";
 }
 function history() {
-    window.location.href = "item/history.html";
+    window.location.href = "./history.html";
 }
 function notice() {
-    window.location.href = "item/event.html";
+    window.location.href = "./event.html";
 }
